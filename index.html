@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                                  <!--Head-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Login Page</title>
+    
+</head>
+<body>                                                                  <!--Body-->
+
+    <h1><b>MASHUPSTACK FORM</b></h1>
+    
+<form action="action_page.php">   
+    
+    <fieldset>                                                                                                   <!--Fieldset to group text and password-->
+        <legend>User Details</legend>
+            <label for="userName">User name:</label><br>   
+            <input type="text" name="userName" id="userName" placeholder="Enter your name"  maxlength="25" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" value="test@email.com" autofocus required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" maxlength="6" required><br>
+    </fieldset>                                                                                                   <!-- End of Fieldset-->
+
+     <label for="userType">Usertype:</label><br>
+         <select name="userType" id="userType" name="type" style="height: 50px; width: 200px;" required>         <!--Select Option-->
+            <option value="Student">Student </option>
+            <option value="Employee">Employee </option>
+            <option value="Freelancer" selected>Freelancer</option>
+        </select><br>
+
+    <label for="Date">Event Date:</label><br>                   
+         <input type="date" name="Date" id="Date" style="height: 50px; width: 200px;" required><br>                  <!--Calender-->
+
+
+
+    <label for="ticketCount">Number of Tickets:</label><br>
+         <input type="radio" id="Ntickets" name="ticketCount" value="1" >                                           <!--Radio button-->
+             <label for="1">1</label><br>
+             <input type="radio" id="Ntickets" name="ticketCount" value="2" checked >
+             <label for="2">2</label><br>
+             <input type="radio" id="Ntickets" name="ticketCount" value="3">
+             <label for="3">3</label><br>
+         
+    <label for="paymentMode">PaymentMode:</label><br>                                                               <!--CheckBox-->
+        <input type="checkbox" name="paymentMode" id="paymentMode" checked required>Online Payment<br>
+         
+    <label for="notes">Notes:</label><br>
+        <textarea rows = "5" cols = "50" name = "description" id="notes" placeholder="Enter Notes"></textarea><br>         <!--Text Area-->
+
+    <input type="submit" style="height: 50px;width: 100px;" value="submit">                                         <!--Submit and Reset Button-->
+    <input type="reset" style="height: 50px;width: 100px;" value="Reset">
+
+</form>
+
+</body>
+</html>
